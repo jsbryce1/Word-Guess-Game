@@ -26,9 +26,6 @@ var wordArray = ["Pikachu", "Charmander", "Bulbasaur", "Squirtle", "Abra", "Gang
 var working = false;
 
 
-
-
-
 //##  Choose pokemon name, reset values and create the placeholders
 function newGame() {
     working = true;
@@ -36,9 +33,9 @@ function newGame() {
     correctLetter = [];
     wrongLetter = [];
     wordGuessArray = [];
-
-
     wordGuess = wordArray[Math.floor(Math.random() * 7)];
+
+
 //## Add placeholders for the Pokemon's Name 
     for (var i = 0; i < wordGuess.length; i++) {
         if (wordGuess[i] === " ") {
@@ -46,12 +43,15 @@ function newGame() {
         } else {
             wordGuessArray.push("_");
         }
+        
     }
   //## Change Dom info to new values
     guessLeft.textContent = guessesRemaining;
     TextPlaceholders.textContent = wordGuessArray.join(" ");
     lettersGuessed.textContent = wrongLetter;
+
 }
+
 
 //## Checks the pressed letter and checks if its in the current string.
 function letterGuess(letter) {
@@ -83,6 +83,7 @@ function letterGuess(letter) {
             alert("You already picked that letter dummy ;p");
 
         }
+
     }
 
 }

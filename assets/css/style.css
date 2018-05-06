@@ -4,13 +4,11 @@ body {
     text-shadow: 5px 5px 20px black;
     font-family: 'Russo One',
     sans-serif;
-
      -webkit-text-stroke-width: .3px;
      -webkit-text-stroke-color: rgb(0, 162, 255);
     letter-spacing: 10px;
-  
- 
 }
+
 img {
     box-shadow: 15px 10px rgba(3, 58, 61, 0.212);
 }
@@ -26,8 +24,6 @@ img {
     letter-spacing: 3px;
     opacity: .70;
     border-radius: 8px;
-
-
 }
 
 #content img {
